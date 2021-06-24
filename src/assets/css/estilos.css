@@ -1,0 +1,44 @@
+.contenedor {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+    background-color: #f8f9fa;
+}
+
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: blue;
+    height: 100vh;
+}
+
+/* .search{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: blueviolet;
+} */
+
+.contenido{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 1rem;
+}
+
+.contenido > .card {
+    margin: .5rem 0;
+}
+
+/* .search > nav > .container-fluid {
+    padding: 0 1rem;
+} */
+
+/* .navbar{
+    padding: 1rem 0;
+} */
