@@ -4,11 +4,12 @@ import { HttpClient } from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
-export class LibroService {
+export class EditorialService {
 
   constructor(private http: HttpClient) { }
 
-  getLibros(){
-    return this.http.get('http://127.0.0.1:3000/api/libros');
+  getEditoriales(){
+    return this.http.get('http://127.0.0.1:3000/api/editoriales');
   }
 }
+

@@ -1,1 +1,38 @@
-<p>editoriales works!</p>
+<!-- <div class="search">
+    <nav class="navbar navbar-light bg-light">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="filterLibro" [(ngModel)]="filterLibro">
+          <button class="btn btn-outline-success" (click)="onFilter()">Search</button>
+        </form>
+    </nav>
+</div> -->
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Direccion correspondencia</th>
+                        <th scope="col">Maximo libros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let editorial of editoriales; let i = index">
+                        <th scope="row">{{i+1}}</th>
+                        <td>{{editorial.nombre}}</td>
+                        <td>{{editorial.telefono}}</td>
+                        <td>{{editorial.email}}</td>
+                        <td>{{editorial.direccion_correspondencia}}</td>
+                        <td>{{editorial.maximo_libros}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <a href="#" class="btn btn-primary">Agregar libro</a> -->
+    </div>
+</div>
+
